@@ -8,3 +8,7 @@ node_modules
 !.env.example
 pnpm-lock.yaml
 .histoire
+
+/node_modules/
+/public/build/
+build-storybook.log
