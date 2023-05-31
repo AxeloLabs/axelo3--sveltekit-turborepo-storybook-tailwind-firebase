@@ -1,0 +1,147 @@
+/* HACK -- USE .SCSS becoz I want colors in IDE - DO NOT USE SASS HERE */
+/* ######################################### */
+/* ######################################### */
+/* HTML BODY */
+/* ######################################### */
+/* background-color: black !important; */
+/* color: var(--mdc-theme-on-primary); */
+/*
+html,
+body {
+
+}
+*/
+
+/* ######################################### */
+/* DEBUG */
+/* ######################################### */
+/* 
+div {
+@apply border; 
+} 
+*/
+/* ######################################### */
+/*
+background-color: theme.$surface;
+color: theme.$on-surface;
+
+marron v: #583120;
+creme ax: #f3c9a3
+creme -: #ffdbca;
+creme +: #ffb68f;
+rouge sang  #b71c1c; 
+gris: #676778; 
+brown fonce -- --mdc-theme-primary: #583120;
+VINZ -- --mdc-theme-primary: #583120; 
+MD brown -- --mdc-theme-primary: #8f4508;
+*/
+:root {
+	.mdc-drawer .mdc-deprecated-list-item--activated {
+		color: var(--mdc-theme-on-secondary);
+	}
+	/* BARE MD CSS */
+	/* Le rouge vinz (lui-m) : b15b3a */
+	--mdc-theme-primary: #783a08; /* root 1 bg */
+	--mdc-theme-secondary: #755846; /* root 2 bg */
+	--mdc-theme-on-primary: #fbc4a6; /* txt 1  */
+	--mdc-theme-on-secondary: #6f3114; /* txt 2  */
+	--mdc-theme-text-primary-on-light: #282728; /* txt 3  */
+
+	/*FFDBC7*/
+
+	--mdc-theme-surface: #f5ede9;
+	--mdc-theme-on-surface: #322620;
+
+	--mdc-theme-error: #ba1a1a;
+	--mdc-theme-on-error: #ffdad6;
+
+	--mdc-theme-background: #322620;
+	--mdc-theme-text-primary-on-background: #065e00;
+	--mdc-theme-text-secondary-on-background: #cf00a2;
+
+	/* --------------------------------------------------- */
+
+	--mdc-theme-text-secondary-on-light: #cf00a2;
+
+	--mdc-theme-text-hint-on-background: #cf00a2;
+	--mdc-theme-text-disabled-on-background: #cf00a2;
+	--mdc-theme-text-icon-on-background: #cf00a2;
+
+	--mdc-theme-text-hint-on-light: #cf00a2;
+	--mdc-theme-text-disabled-on-light: #cf00a2;
+	--mdc-theme-text-icon-on-light: #cf00a2;
+
+	--mdc-theme-text-primary-on-dark: #cf00a2;
+	--mdc-theme-text-secondary-on-dark: #cf00a2;
+	--mdc-theme-text-hint-on-dark: #cf00a2;
+	--mdc-theme-text-disabled-on-dark: #cf00a2;
+	--mdc-theme-text-icon-on-dark: #cf00a2;
+}
+/*
+// --mdc-theme-text-primary-on-background: rgba(0, 0, 0, 0.87);
+// --mdc-theme-text-secondary-on-background: rgba(0, 0, 0, 0.54);
+// --mdc-theme-text-hint-on-background: rgba(0, 0, 0, 0.38);
+// --mdc-theme-text-disabled-on-background: rgba(0, 0, 0, 0.38);
+// --mdc-theme-text-icon-on-background: rgba(0, 0, 0, 0.38);
+// --mdc-theme-text-primary-on-light: rgba(0, 0, 0, 0.87);
+// --mdc-theme-text-secondary-on-light: rgba(0, 0, 0, 0.54);
+// --mdc-theme-text-hint-on-light: rgba(0, 0, 0, 0.38);
+// --mdc-theme-text-disabled-on-light: rgba(0, 0, 0, 0.38);
+// --mdc-theme-text-icon-on-light: rgba(0, 0, 0, 0.38);
+// --mdc-theme-text-primary-on-dark: white;
+// --mdc-theme-text-secondary-on-dark: rgba(255, 255, 255, 0.7);
+// --mdc-theme-text-hint-on-dark: rgba(255, 255, 255, 0.5);
+// --mdc-theme-text-disabled-on-dark: rgba(255, 255, 255, 0.5);
+// --mdc-theme-text-icon-on-dark: rgba(255, 255, 255, 0.5);
+*/
+/* BARE Layout grid spacing. */
+/* 
+--mdc-layout-grid-margin-desktop: 24px;
+--mdc-layout-grid-gutter-desktop: 24px;
+--mdc-layout-grid-column-width-desktop: 72px;
+--mdc-layout-grid-margin-tablet: 16px;
+--mdc-layout-grid-gutter-tablet: 16px;
+--mdc-layout-grid-column-width-tablet: 72px;
+--mdc-layout-grid-margin-phone: 16px;
+--mdc-layout-grid-gutter-phone: 16px;
+--mdc-layout-grid-column-width-phone: 72px; 
+*/
+/*
+https://github.com/material-components/material-components-web/tree/v14.0.0/packages/mdc-theme#color-scheme 
+--mdc-theme-primary	The theme primary color
+--mdc-theme-secondary	The theme secondary color
+--mdc-theme-background	The theme background color
+--mdc-theme-surface	The theme surface color
+--mdc-theme-on-primary	Text color on top of a primary background
+--mdc-theme-on-secondary	Text color on top of a secondary background
+--mdc-theme-on-surface	Text color on top of a surface background
+--mdc-theme-text-<TEXT_STYLE>-on-light	Text color for TEXT_STYLE on top of light background. Please see Text styles section.
+--mdc-theme-text-<TEXT_STYLE>-on-dark	Text color for TEXT_STYLE on top of dark background. Please see Text styles section. 
+*/
+
+/*
+ --mdc-shape-small	Rounded shape radius size for small components. Default value 4px.
+	--mdc-shape-medium	Rounded shape radius size for small components. Default value 4px.
+	--mdc-shape-large   Rounded shape radius size for small components. Default value 0. 
+*/
+
+/* ######################################### */
+/* SCROLLBAR */
+/* ######################################### */
+/*
+body::-webkit-scrollbar {
+	width: 1em;
+}
+body::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+	border: 5px solid transparent;
+	border-radius: 100px;
+	background-color: #717074;
+	background-clip: content-box;
+}
+body::-webkit-scrollbar-thumb:hover {
+	background-color: #0f2caf;
+} 
+*/

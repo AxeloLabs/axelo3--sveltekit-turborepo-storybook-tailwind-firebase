@@ -1,0 +1,31 @@
+// @use '@material/theme/color-palette';
+
+// @use '@material/theme/index' as theme with (
+// 	$primary: #783a0877,
+// 	$secondary: #fbc4a6,
+// 	$surface: #fbc4a6,
+// 	$background: #fffbff,
+// 	$error: #ba1a1a
+// );
+
+// @import './axCard';
+// @import './axDrawer';
+// @import './axSnack';
+// @import './axTypo';
+// Elevation and theme mixins.
+
+// @use '@material/theme/index' as theme;
+
+// @use '@material/shape/index' as shape with (
+// 	$small-component-radius: 0,
+// 	$medium-component-radius: 0,
+// 	$large-component-radius: 0
+// );
+
+@use 'axSnack.scss';
+@use 'axTypo.scss';
+@use 'axDrawer.scss';
+@use 'axCard.scss';
+@use 'axElevation.scss';
+
+// @use '@material/shape';

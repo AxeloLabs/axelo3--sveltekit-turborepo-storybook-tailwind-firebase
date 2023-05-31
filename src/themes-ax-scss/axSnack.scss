@@ -1,0 +1,35 @@
+@use '@smui/snackbar/style'; // issue : https://discord.com/channels/833139170703704115/833139171266265111/1066042584608280679
+@use '@material/snackbar/mixins';
+@use '@material/theme/color-palette';
+@use '@material/theme/theme-color';
+/* ####################################################### */
+.mdc-snackbar.ax-snack-firestore {
+	@include mixins.fill-color(color-palette.$yellow-500);
+	@include mixins.label-ink-color(theme-color.accessible-ink-color(color-palette.$yellow-500));
+}
+.mdc-snackbar.ax-snack-success {
+	@include mixins.fill-color(color-palette.$green-500);
+	@include mixins.label-ink-color(theme-color.accessible-ink-color(color-palette.$green-500));
+}
+.mdc-snackbar.ax-snack-warning {
+	@include mixins.fill-color(color-palette.$orange-500);
+	@include mixins.label-ink-color(theme-color.accessible-ink-color(color-palette.$orange-500));
+}
+.mdc-snackbar.ax-snack-error {
+	@include mixins.fill-color(color-palette.$red-500);
+	@include mixins.label-ink-color(theme-color.accessible-ink-color(color-palette.$red-500));
+}
+/* ####################################################### */
+// See https://github.com/material-components/material-components-web/tree/v14.0.0/packages/mdc-theme
+// ..........................................
+//This import
+// @use "../theme/custom/snackbars.scss";
+// issue https://discord.com/channels/833139170703704115/833139171266265111/1066042584608280679
+// @use '@smui/snackbar/style';
+// See https://github.com/material-components/material-components-web/tree/v14.0.0/packages/mdc-snackbar
+// @use '@material/snackbar/index' as snackbar with (
+// 	$action-ink-color: theme-color.prop-value(primary)
+// );
+// ..........................................
+// @include snackbar.core-styles;
+// @use '@smui/snackbar';
