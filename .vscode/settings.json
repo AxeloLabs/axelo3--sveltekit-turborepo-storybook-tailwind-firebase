@@ -1,0 +1,8 @@
+{
+	"files.exclude": {},
+	// 1
+	"search.exclude": {
+		"static": true,
+		".histoire": true
+	}
+}
