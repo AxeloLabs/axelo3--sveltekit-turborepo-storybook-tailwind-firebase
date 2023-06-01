@@ -1,3 +1,5 @@
+pnpm build-storybook
+
 MATERIALDESIGN @mdi/js
 
 <!-- https://pictogrammers.com/library/mdi/ -->
