@@ -1,10 +1,13 @@
 {
-	"name": "axelo2--storybook",
+	"name": "axelo3--storybook",
 	"version": "0.0.1",
 	"private": true,
 	"packageManager": "pnpm@8.2.0",
-	"description": "Axelo2.",
-	"author": "indaco <github@nzaero.me>",
+	"description": "Axelo3",
+	"author": {
+		"name": "indaco",
+		"email": "github@nzaero.me"
+	},
 	"license": "MIT",
 	"scripts": {
 		"dev": "svelte-kit sync && vite dev",
@@ -24,7 +27,8 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
 		"storybook": "storybook dev -p 6006",
-		"build-storybook": "storybook build"
+		"build-storybook": "storybook build",
+		"chromatic": "npx chromatic --project-token=chpt_cf66e39929dbe9a"
 	},
 	"type": "module",
 	"devDependencies": {
@@ -108,5 +112,7 @@
 		"typescript": "^5.0.4",
 		"vite": "^4.3.9",
 		"vitest": "^0.31.2"
-	}
+	},
+	"readme": "ERROR: No README data found!",
+	"_id": "axelo2--storybook@0.0.1"
 }
