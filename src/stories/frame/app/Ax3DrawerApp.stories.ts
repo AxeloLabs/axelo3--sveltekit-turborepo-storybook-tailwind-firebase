@@ -1,7 +1,7 @@
 import { Ax3DrawerApp } from '$components/frame/app/index.js';
 import type { Meta, StoryObj } from '@storybook/svelte';
 const meta = {
-	title: 'frame/Ax3DrawerApp',
+	title: 'B - frame/Ax3DrawerApp',
 	component: Ax3DrawerApp,
 	tags: ['autodocs']
 } satisfies Meta<Ax3DrawerApp>;

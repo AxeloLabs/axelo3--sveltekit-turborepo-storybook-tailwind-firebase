@@ -6,7 +6,7 @@ import { Ax2HeaderApp } from '$components/frame/app/index.js';
 import { AX_CONST__UI__menuApp } from '$src/0-config/ui/AX_CONST__UI__menuApp.json';
 import type { Meta, StoryObj } from '@storybook/svelte';
 const meta = {
-	title: 'frame/Ax2HeaderApp',
+	title: 'B - frame/Ax2HeaderApp',
 	component: Ax2HeaderApp,
 	tags: ['autodocs']
 } satisfies Meta<Ax2HeaderApp>;

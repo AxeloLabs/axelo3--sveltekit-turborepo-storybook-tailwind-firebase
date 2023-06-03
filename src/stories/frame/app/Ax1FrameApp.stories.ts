@@ -6,7 +6,7 @@ import { Ax1FrameApp } from '$components/frame/app/index.js';
 import { AX_CONST__UI__menuApp } from '$src/0-config/ui/AX_CONST__UI__menuApp.json';
 import type { Meta, StoryObj } from '@storybook/svelte';
 const meta = {
-	title: 'frame/Ax1FrameApp',
+	title: 'B - frame/Ax1FrameApp',
 	component: Ax1FrameApp,
 	tags: ['autodocs']
 } satisfies Meta<Ax1FrameApp>;

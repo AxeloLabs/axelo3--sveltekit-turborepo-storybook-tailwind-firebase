@@ -1,7 +1,7 @@
 import { ThemeDebugTypo } from '$components/design-system/index.js';
 import type { Meta, StoryObj } from '@storybook/svelte';
 const meta = {
-	title: 'Design-system-ax/ThemeDebugTypo',
+	title: 'A - Design-system/ThemeDebugTypo',
 	component: ThemeDebugTypo,
 	tags: ['autodocs']
 } satisfies Meta<ThemeDebugTypo>;

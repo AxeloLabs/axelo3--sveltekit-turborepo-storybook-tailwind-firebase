@@ -2,7 +2,7 @@ import { AxDrawerMenuitem } from '$components/widgets/index.js';
 import { AX_CONST__UI__baseDirFrame } from '$src/0-config/ui/AX_CONST__UI__base';
 import type { Meta, StoryObj } from '@storybook/svelte';
 const meta = {
-	title: 'widgets/AxDrawerMenuitem',
+	title: 'C - widgets/AxDrawerMenuitem',
 	component: AxDrawerMenuitem,
 	tags: ['autodocs']
 } satisfies Meta<AxDrawerMenuitem>;

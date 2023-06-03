@@ -1,7 +1,7 @@
 import { ThemeDebugColor } from '$components/design-system/index.js';
 import type { Meta, StoryObj } from '@storybook/svelte';
 const meta = {
-	title: 'Design-system-ax/ThemeDebugColor',
+	title: 'A - Design-system/ThemeDebugColor',
 	component: ThemeDebugColor,
 	tags: ['autodocs']
 } satisfies Meta<ThemeDebugColor>;

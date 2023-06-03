@@ -12,3 +12,4 @@ pnpm-lock.yaml
 /node_modules/
 /public/build/
 build-storybook.log
+/storybook-static/
