@@ -40,7 +40,14 @@
 	</label>
 
 	<label for="title" aria-label={task.title} class="title">
-		<input type="text" value={task.title} readonly name="title" placeholder="Input title" />
+		<input
+			style="background: red;"
+			type="text"
+			value={task.title}
+			readonly
+			name="title"
+			placeholder="Input title"
+		/>
 	</label>
 
 	{#if task.state !== 'TASK_ARCHIVED'}
