@@ -41,7 +41,7 @@
 
 	<label for="title" aria-label={task.title} class="title">
 		<input
-			style="background: red;"
+			style="background: yellow;"
 			type="text"
 			value={task.title}
 			readonly
