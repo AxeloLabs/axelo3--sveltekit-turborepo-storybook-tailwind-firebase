@@ -1,7 +1,9 @@
 import type { Preview } from '@storybook/svelte';
 import '../src/app.postcss';
-import '../src/index.css';
+
+// import '../src/index.css';
 // import '../static/smui.css';
+import '@splidejs/svelte-splide/css'; // splide - Default theme
 
 // Material Design
 // import '@fontsource/roboto/300.css';

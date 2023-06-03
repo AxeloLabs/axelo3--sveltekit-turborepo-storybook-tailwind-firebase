@@ -13,3 +13,6 @@ pnpm-lock.yaml
 /public/build/
 build-storybook.log
 /storybook-static/
+
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*

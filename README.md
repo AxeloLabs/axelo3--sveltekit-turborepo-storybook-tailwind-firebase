@@ -1,3 +1,11 @@
+'component', // $page.url.pathname,
+
+// type Spread<Type> = { [Key in keyof Type]: Type[Key] };
+// [key: number]: I_ENTITY\_\_uiinputValue;
+
+TODO
+LELINT => je vois pas ds mon VS code les eereurs de LINTAGE vus avec la CMD
+
 test deploy
 
 Share lib
