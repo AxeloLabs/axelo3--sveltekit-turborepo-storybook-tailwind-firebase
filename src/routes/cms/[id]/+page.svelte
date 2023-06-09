@@ -10,6 +10,8 @@
 		CONST__DB_COLLECTION__event,
 		CONST__DB_COLLECTION__lademarche
 	} from '$config/db/firebase/CONST__DB__colletions';
+	import { CONST__FORM__addEvent } from '$config/form/CONST__FORM__addEvent.json';
+	import { CONST__FORM__addPost } from '$config/form/CONST__FORM__addPost.json';
 	import { STORE__CONTENT, STORE__DB } from '$stores/STORE_actions';
 	import { AcceuilApp, BlogApp, EventApp, LaDemarcheApp } from '$ui/index';
 	import { axlog } from '$utils/log/axLog';
@@ -32,11 +34,11 @@
 		} else if ($page.url.pathname === '/cms/creations-realisations') {
 			$STORE__DB.collection = CONST__DB_COLLECTION__blog;
 			$STORE__DB.datasetReset = CONST__DATASET__post;
-			$STORE__DB.formAddInputs;
+			$STORE__DB.formAddInputs = CONST__FORM__addPost;
 		} else if ($page.url.pathname === '/cms/prochains-rendez-vous') {
 			$STORE__DB.collection = CONST__DB_COLLECTION__event;
 			$STORE__DB.datasetReset = CONST__DATASET__event;
-			$STORE__DB.formAddInputs;
+			$STORE__DB.formAddInputs = CONST__FORM__addEvent;
 		}
 	}
 </script>

@@ -5,7 +5,7 @@
 	import { onMount } from 'svelte';
 
 	onMount(() => {
-		axlog(null, 'layout', '### LAYOUT (cms) ###');
+		axlog(null, '/cms/', '### LAYOUT (cms) ###');
 	});
 </script>
 

@@ -29,7 +29,7 @@
 
 	onMount(() => {
 		$STORE__FRAME_drawerIsOpen = true;
-		axlog(null, 'component', 'wc -- [ [ [ FRAME (cms) ] ] ]', false, 'MOUNT', true);
+		axlog(null, '/cms/', 'wc -- [ [ [ FRAME (cms) ] ] ]', false, 'MOUNT', true);
 	});
 
 	$: {

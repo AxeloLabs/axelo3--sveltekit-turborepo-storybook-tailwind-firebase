@@ -28,7 +28,6 @@ import {
  * STORE_CONTENT -- generally, will get the data returned by a db operation -- is the global state of the app - just a list of the elements to display in the UI
  * STORE_DB -- buffer (tmp memory) that represent what needs to be updated to the db -- is used when operations needs to be done with the DB
  */
-
 export const STORE__CONTENT: Writable<T_ENTITIES[]> = writable([]);
 export const STORE__DB: Writable<I_STORE__FORM<T_ENTITIES, T_DTOS>> = writable({
 	collection: undefined,
@@ -56,6 +55,9 @@ export const ACTION__getAllSorted = async <T extends T_ENTITIES>(collection) => 
 // -1
 export const ACTION__addEntity = async () => {
 	console.debug('🌎🏎️✅ click >> on:add 1 🟡');
+
+	// if (!STORE__DB || !get(STORE__DB) || !get(STORE__DB).formAddInputs === undefined) return;
+
 	const error = {
 		pos: 0,
 		tag: 'error-bro',
@@ -65,34 +67,40 @@ export const ACTION__addEntity = async () => {
 
 	let entity;
 
+	// -2
+	// -2 TODO - Il faut hard lier ce code, avec les fichier CONT_FORM (si add remove) des elements
+	// -2
 	if (isEntityPosts(get(STORE__CONTENT))) {
-		// 1 BLOG
+		// -0 BLOG
 		const post: I_DTO__post = {
-			titlePost: structuredClone(get(STORE__DB)?.formAddInputs[0]) ?? error,
-			// slug: structuredClone(get(STORE__DB)?.formAddInputs[1]) ?? error,
-			body: structuredClone(get(STORE__DB)?.formAddInputs[2]) ?? error,
+			titlePost: structuredClone(get(STORE__DB).formAddInputs[0]) ?? error,
+			// slug: structuredClone(get(STORE__DB).formAddInputs[1]) ?? error,
+			body: structuredClone(get(STORE__DB).formAddInputs[1]) ?? error,
 			createdAt: Date.now() // dateExample: Timestamp.fromDate(new Date("December 10, 1815")),
 		};
 		entity = post;
 	} else if (isEntityEvents(get(STORE__CONTENT))) {
-		// 0 EVENT
+		// -0 EVENT
 		const event: I_DTO__event = {
-			titleEvent: structuredClone(get(STORE__DB)?.formAddInputs[0]) ?? error,
-			// slug: structuredClone(get(STORE__DB)?.formAddInputs[1]) ?? error,
-			body: structuredClone(get(STORE__DB)?.formAddInputs[2]) ?? error,
-			date: structuredClone(get(STORE__DB)?.formAddInputs[3]) ?? error,
-			image: structuredClone(get(STORE__DB)?.formAddInputs[4]) ?? error,
+			titleEvent: structuredClone(get(STORE__DB).formAddInputs[0]) ?? error,
+			// slug: structuredClone(get(STORE__DB).formAddInputs[1]) ?? error,
+			date: structuredClone(get(STORE__DB).formAddInputs[1]) ?? error,
+			body: structuredClone(get(STORE__DB).formAddInputs[2]) ?? error,
+			// HERE - TODO - il y a le blob ds l image, qu il fo delete AVANT de save ds DB
+			image: structuredClone(get(STORE__DB).formAddInputs[3]) ?? error,
 			createdAt: Date.now() // dateExample: Timestamp.fromDate(new Date("December 10, 1815")),
 		};
 		entity = event;
 	}
 
 	// we must add it in the DB, before the UI
-	const postId = await serviceCMD__add_newOrExistingId(CONST__DB_COLLECTION__blog, entity);
-	const post2 = { ...entity, idDoc: postId };
+	// const postId = await serviceCMD__add_newOrExistingId(CONST__DB_COLLECTION__blog, entity);
+	// const postId = 'TO-DEFINE-ON-SAVE';
+	// const post2 = { ...entity, idDoc: postId };
 
 	// REMETTRE
-	STORE__CONTENT.set([...get(STORE__CONTENT), post2]);
+	// STORE__CONTENT.set([...get(STORE__CONTENT), post2]);
+	STORE__CONTENT.set([...get(STORE__CONTENT), { ...entity }]); // il n y a pas de Id, mais ca ne devrait pas gener la vue
 
 	get(STORE__CONTENT).sort((a, b) => {
 		// if (isEntityEvent(a) && isEntityPosts(b))
@@ -101,19 +109,21 @@ export const ACTION__addEntity = async () => {
 	});
 
 	// tip: reset form
-	get(STORE__DB)?.formAddInputs.forEach((itm) => {
-		console.debug('reseted');
+	get(STORE__DB).formAddInputs.forEach((itm) => {
+		console.debug('form iv is reseted');
 		itm.value = ''; // hack - refresh ui
 	});
-	// console.dir(get(STORE__DB)?.formAddInputs);
+	// console.dir(get(STORE__DB).formAddInputs);
 
 	STORE__DB.set(get(STORE__DB)); // hack-ui -- mank refresh
 
 	console.debug('c 🌎🏎️✅ click << on:add 2 🟨end, arr', get(STORE__DB));
 };
 // -1
+// -1
+// -1
 export const ACTION__save = async () => {
-	if (!get(STORE__DB)?.collection || !get(STORE__CONTENT)) return;
+	if (!get(STORE__DB).collection || !get(STORE__CONTENT)) return;
 	console.debug('🌎🏎️✅ click >> on:save 1 🟡');
 	// if (!confirm('Enregistrer les modifications ?')) return;
 	// openDialog('ENREGISTRER LES MODIFICATIONS', 'Etes vous sure ?');
@@ -135,7 +145,8 @@ export const ACTION__save = async () => {
 	// 	}
 	// }
 	// axlog(store, $page.url.pathname, 'SAVE', false, 'DEBUG-AVANT-SAVE');
-	await serviceCMD__adds_newOrExistingId(get(STORE__DB)!.collection, get(STORE__CONTENT));
+	// TODO - retirer ! -- it must be defined
+	await serviceCMD__adds_newOrExistingId(get(STORE__DB).collection, get(STORE__CONTENT));
 	//
 	console.debug('🌎🏎️✅ click << on:save 2 🟨');
 	return;
@@ -181,8 +192,10 @@ export const ACTION__save = async () => {
 	}
 };
 // -1
+// -1
+// -1
 export const ACTION__reset_inject = async () => {
-	if (!get(STORE__DB) || !get(STORE__DB)?.collection) {
+	if (!get(STORE__DB) || !get(STORE__DB).collection) {
 		console.debug('ERROR: collection is undef');
 		return;
 	}
@@ -190,15 +203,17 @@ export const ACTION__reset_inject = async () => {
 	if (!confirm('Effacer toute les donnees et injecter DEFAULT ?')) return;
 
 	// 2 DB ops
-	await crudCMD__clearCollection(get(STORE__DB)!.collection);
+	await crudCMD__clearCollection(get(STORE__DB).collection);
 	// 2
-	await serviceCMD__adds_newOrExistingId(get(STORE__DB)!.collection, get(STORE__DB)!.datasetReset);
+	await serviceCMD__adds_newOrExistingId(get(STORE__DB).collection, get(STORE__DB).datasetReset);
 	// 2
 	// UI ops -- hack refresh
-	STORE__CONTENT.set(await serviceQUERY__getAllCollection_Sorted(get(STORE__DB)!.collection, true));
+	STORE__CONTENT.set(await serviceQUERY__getAllCollection_Sorted(get(STORE__DB).collection, true));
 
 	console.debug('🌎🏎️✅ click << on:inject 2 🟨');
 };
+// -1
+// -1
 // -1
 export const ACTION__delItem = async (pos) => {
 	console.debug('🌎🏎️✅ click >> on:del 1 🟡', get(STORE__CONTENT), pos);

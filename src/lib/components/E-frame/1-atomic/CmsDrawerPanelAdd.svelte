@@ -12,7 +12,7 @@
 	onMount(() => {
 		axlog(
 			{ data: $STORE__CONTENT },
-			'component',
+			'/cms/',
 			'wc -- cms drawer: panel add',
 			false,
 			'MOUNT',

@@ -2,13 +2,13 @@
 // <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> -->
 // <!-- </svelte:head> -->
 
-import { CmsDrawerPanelAdd } from '$ui';
+import { EditInjectorDbRestore } from '$ui/index.js';
 import type { Meta, StoryObj } from '@storybook/svelte';
 const meta = {
-	title: 'C - molecule/CmsDrawerPanelAdd',
-	component: CmsDrawerPanelAdd,
+	title: 'B - atomic/EditInjectorDbRestore',
+	component: EditInjectorDbRestore,
 	tags: ['autodocs']
-} satisfies Meta<CmsDrawerPanelAdd>;
+} satisfies Meta<EditInjectorDbRestore>;
 export default meta;
 type Story = StoryObj<typeof meta>;
 export const Primary: Story = {

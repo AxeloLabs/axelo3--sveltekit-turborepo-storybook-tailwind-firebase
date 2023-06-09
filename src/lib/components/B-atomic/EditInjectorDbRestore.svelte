@@ -7,7 +7,7 @@
 	onMount(() => {
 		axlog(
 			{ data: $STORE__CONTENT },
-			'component',
+			'/cms/',
 			'wc -- cms drawer: form injector',
 			false,
 			'MOUNT',

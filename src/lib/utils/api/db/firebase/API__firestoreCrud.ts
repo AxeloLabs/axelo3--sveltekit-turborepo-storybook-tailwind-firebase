@@ -79,10 +79,12 @@ export const crudCMD__addExistingId = async <T extends T_ENTITIES>(
 	return await firestore__tryHelper(callback, msg, 'ADD-id');
 };
 // -1
+// -1
 export const crudCMD__addNew = async <T extends T_ENTITIES>(
 	col: CollectionReference<T>,
 	data: any
 ) => {
+	// -1
 	let msg = `\x1B[35;40;4m  ${col.id.toUpperCase()} \x1B[m`;
 	const callback = async () => {
 		const docRef = doc(col); // Add a new document with a generated id
@@ -95,12 +97,14 @@ export const crudCMD__addNew = async <T extends T_ENTITIES>(
 		await setDoc(docRef, entity);
 		return { msg, data: docRef.id };
 	};
-	return await firestore__tryHelper(callback, msg, 'ADD-new');
+	return await firestore__tryHelper(callback, msg, 'ADD-new', data);
 };
+// -1
 // -1 - TODO - faire en form callback pour gestion error => DANGEROUS TO PUT THIS CLIENT SITDE
 export const crudCMD__clearCollection = async <T extends T_ENTITIES>(
 	col: CollectionReference<T>
 ) => {
+	// -1
 	const docsSnap = await getDocs(col);
 	if (docsSnap.size > 0) {
 		docsSnap.forEach(async (doc) => {
@@ -111,19 +115,25 @@ export const crudCMD__clearCollection = async <T extends T_ENTITIES>(
 // -3
 // -3 HELPER
 // -3
-const firestore__tryHelper = async (callback, msg: string, action: string): Promise<I_msg> => {
+const firestore__tryHelper = async (
+	callback,
+	msg: string,
+	action: string,
+	dataDebug = null
+): Promise<I_msg> => {
 	try {
 		console.debug('🚔 🔥🐶 ... -- firestore-crud');
 		const r = await callback(msg);
 		LOG_LEVEL__ON ? console.debug(`🚔 🔥✅ db -- ${action}--ED ${r.msg}`) : '';
 		LOG_LEVEL__ON ? console.dir(r.data) : 'db-log-level--off';
 		console.debug('🚔 🔥END');
-		// console.debug('🚔 🔥🎤');
 		return r;
 	} catch (err) {
 		LOG_LEVEL__ON ? console.debug(`🚔 🔥❌ db -- ${action}--ING ${msg}`) : '';
+		LOG_LEVEL__ON ? console.dir(dataDebug) : 'db-log-level--off';
 		console.debug('🚔 🔥END');
 		if (err instanceof Error) {
+			console.debug('err instanceof Error::');
 			console.debug(err.message);
 			console.debug(err.name);
 			console.debug(err);

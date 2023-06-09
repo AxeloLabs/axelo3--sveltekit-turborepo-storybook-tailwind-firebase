@@ -11,8 +11,8 @@
 	<img class="w-40" src={event.image.value} alt="" />
 
 	<SeparatorMedium />
-	<div class="underline">{event.titleEvent.value}</div>
-	<div style="">{event.date.value}</div>
+	<div class=" uppercase">{event.titleEvent.value}</div>
+	<div class="text-white">{event.date.value}</div>
 	<SeparatorMedium />
 
 	<div class="font-bold" style="color:var(--mdc-theme-on-secondary)">

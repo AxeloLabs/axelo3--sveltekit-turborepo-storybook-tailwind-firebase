@@ -2,13 +2,13 @@
 // <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> -->
 // <!-- </svelte:head> -->
 
-import { CmsDrawerFormDbInjector } from '$ui/index.js';
+import { CmsDrawerPanelAdd } from '$ui';
 import type { Meta, StoryObj } from '@storybook/svelte';
 const meta = {
-	title: 'B - atomic/CmsDrawerFormDbInjector',
-	component: CmsDrawerFormDbInjector,
+	title: 'E - Frame/1 - atomic/CmsDrawerPanelAdd',
+	component: CmsDrawerPanelAdd,
 	tags: ['autodocs']
-} satisfies Meta<CmsDrawerFormDbInjector>;
+} satisfies Meta<CmsDrawerPanelAdd>;
 export default meta;
 type Story = StoryObj<typeof meta>;
 export const Primary: Story = {

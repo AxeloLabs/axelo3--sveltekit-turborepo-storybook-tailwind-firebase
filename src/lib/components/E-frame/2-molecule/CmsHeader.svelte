@@ -15,7 +15,7 @@
 	const msg = 'Etes vous sure ?';
 
 	onMount(() => {
-		axlog(null, 'component', 'wc -- HEADER', false, 'MOUNT', true);
+		axlog(null, '/cms/', 'wc -- HEADER', false, 'MOUNT', true);
 	});
 
 	$: if (dialog && open) dialog.open();

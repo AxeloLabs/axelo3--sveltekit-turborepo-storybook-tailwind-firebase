@@ -7,7 +7,7 @@
 	import { onMount } from 'svelte';
 
 	onMount(() => {
-		axlog({ data: $STORE__CONTENT }, $page.url.pathname, 'HOME ');
+		axlog(null, $page.url.pathname, 'HOME ');
 	});
 </script>
 

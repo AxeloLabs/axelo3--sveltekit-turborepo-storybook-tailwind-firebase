@@ -4,7 +4,7 @@
 	import {
 		AppDrawerMenuItem,
 		CmsDrawerAddEdit,
-		CmsDrawerFormDbInjector,
+		EditInjectorDbRestore,
 		EditInputValue
 	} from '$ui/index';
 	import { axlog } from '$utils/log/axLog';
@@ -19,7 +19,7 @@
 
 	onMount(() => {
 		console.log('route: ', route);
-		axlog({ data: $STORE__CONTENT }, 'component', 'wc -- DRAWER', false, 'MOUNT', true);
+		axlog(null, '/cms/', 'wc -- DRAWER', false, 'MOUNT', true);
 	});
 </script>
 
@@ -79,7 +79,7 @@
 		<!-- -2 INJECT  -->
 		<!-- NO FOR PROD  -->
 		<!-- {:else if active === 'inject'} -->
-		<CmsDrawerFormDbInjector />
+		<EditInjectorDbRestore />
 	{/if}
 </Content>
 

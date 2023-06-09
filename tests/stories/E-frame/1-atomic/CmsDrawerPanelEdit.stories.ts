@@ -2,13 +2,13 @@
 // <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> -->
 // <!-- </svelte:head> -->
 
-import { CmsDrawerAddEdit } from '$ui/index.js';
+import { CmsDrawerPanelEdit } from '$ui/index.js';
 import type { Meta, StoryObj } from '@storybook/svelte';
 const meta = {
-	title: 'C - molecule/CmsDrawerAddEdit',
-	component: CmsDrawerAddEdit,
+	title: 'E - Frame/1 - atomic/CmsDrawerPanelEdit',
+	component: CmsDrawerPanelEdit,
 	tags: ['autodocs']
-} satisfies Meta<CmsDrawerAddEdit>;
+} satisfies Meta<CmsDrawerPanelEdit>;
 export default meta;
 type Story = StoryObj<typeof meta>;
 export const Primary: Story = {

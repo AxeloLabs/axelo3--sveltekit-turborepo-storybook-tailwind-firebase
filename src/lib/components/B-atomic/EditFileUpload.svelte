@@ -7,7 +7,7 @@
 	let imgFromElement;
 
 	onMount(() => {
-		axlog(ivItm, 'component', 'wc -- file upload', false, 'MOUNT', true);
+		axlog(ivItm, '/cms/', 'wc -- file upload', false, 'MOUNT', true);
 	});
 
 	// -0
@@ -20,13 +20,13 @@
 		reader.onload = (e) => {
 			imgFromElement = e.target?.result;
 			if (ivItm) {
-				console.debug('imgFromElement::::', imgFromElement);
 				ivItm.value = imgFromElement;
-				console.debug('blob file added', image, 'ivItm', ivItm);
 				// step 1 - we add the file to the blob, so we update it to the storage when the user will click on SAVE
 				// EROR HERE
 				// ivItm.blobs = files;
 				ivItm.blobs = image;
+				console.debug('(ivItm.value) - ', ivItm.value);
+				console.debug('(ivItm.blobs) - ', ivItm.blobs);
 			}
 		};
 	};
@@ -48,7 +48,7 @@ bg-gray-100
 text-center
 hover:bg-black/30
 "
->
+> 
 	<!-- ########################################################## -->
 	<!-- PAsser idDoc si c mandatory -->
 	<!-- name={'upload-id' + pos} -->
@@ -86,7 +86,6 @@ hover:bg-black/30
 			alt=""
 			class="megacenter max-h-44 max-w-xs bg-white bg-contain"
 		/>
-		<!-- ########################################################## -->
 	{/if}
 </div>
 

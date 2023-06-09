@@ -12,9 +12,6 @@
 	// });
 </script>
 
-<!-- ####################################################### -->
-<!-- INPUT VALUE                             -->
-<!-- ####################################### -->
 {#if ivItm}
 	<!-- TODO - a remettre, je fais une version sans imge, ni slideshow -->
 	<!-- {#if ivItm.tag === 'text' || (ivItm.tag === 'file' && ivItm.format && ivItm.format === 'video')} -->

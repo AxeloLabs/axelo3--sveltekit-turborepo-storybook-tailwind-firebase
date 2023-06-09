@@ -8,7 +8,7 @@
 	onMount(() => {
 		axlog(
 			{ data: $STORE__CONTENT },
-			'component',
+			'/cms/',
 			'wc -- cms drawer: panel add-edit',
 			false,
 			'MOUNT',
@@ -16,11 +16,6 @@
 		);
 	});
 
-	// $: {
-	// 	console.debug('################ panel-add-edit :: $STORE__CONTENT');
-	// 	console.dir($STORE__CONTENT);
-	// 	console.debug('################');
-	// }
 </script>
 
 {#if $STORE__CONTENT.length}

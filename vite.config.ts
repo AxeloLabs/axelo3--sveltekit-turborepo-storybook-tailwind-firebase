@@ -1,6 +1,7 @@
 /// <reference types="vitest" />
 
 import { sveltekit } from '@sveltejs/kit/vite';
+import { nodeLoaderPlugin } from '@vavite/node-loader/plugin';
 import type { UserConfig } from 'vite';
 
 const config: UserConfig = {
@@ -9,6 +10,7 @@ const config: UserConfig = {
 		port: process.env.HISTOIRE ? 6006 : 5173
 	},
 	// -1
+	// plugins: [nodeLoaderPlugin(), sveltekit()], // trying to debug
 	plugins: [sveltekit()],
 	// ORIG -> I put it in sveltekit
 	// resolve: {

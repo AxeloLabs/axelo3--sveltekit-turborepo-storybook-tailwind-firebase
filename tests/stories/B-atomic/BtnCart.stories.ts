@@ -1,6 +1,6 @@
 import { BtnCart } from '$ui/index.js';
 import type { Meta, StoryObj } from '@storybook/svelte';
-// import { BtnCart } from '../../../src/lib/components/index.js';
+// import { BtnCart } from '$ui';
 const meta = {
 	title: 'B - atomic/BtnCart',
 	component: BtnCart,
