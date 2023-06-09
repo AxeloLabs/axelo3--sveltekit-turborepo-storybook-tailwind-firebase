@@ -11,6 +11,6 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
 	args: {
 		image1: CONST__UI__baseDirMedia + 'frame/logo-01.png',
-		image2: CONST__UI__baseDirMedia + 'content/images/acceuil/subtitle-logo--inkfree.png'
+		image2: CONST__UI__baseDirMedia + 'content/acceuil/img/subtitle-logo--inkfree.png'
 	}
 };

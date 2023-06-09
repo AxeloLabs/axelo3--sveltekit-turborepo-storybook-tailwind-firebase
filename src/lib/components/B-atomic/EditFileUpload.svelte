@@ -48,7 +48,7 @@ bg-gray-100
 text-center
 hover:bg-black/30
 "
-> 
+>
 	<!-- ########################################################## -->
 	<!-- PAsser idDoc si c mandatory -->
 	<!-- name={'upload-id' + pos} -->

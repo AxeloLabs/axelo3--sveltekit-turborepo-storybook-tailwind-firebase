@@ -9,6 +9,6 @@
 	});
 </script>
 
-<AppFrame>
+<AppFrame active={$page.url.pathname}>
 	<slot />
 </AppFrame>

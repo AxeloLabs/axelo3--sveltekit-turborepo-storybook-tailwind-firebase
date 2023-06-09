@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { CONST__DATASET__acceuil } from '$config/datasets/CONST__DATASET__acceuil.json';
-	import { CONST__DATASET__event } from '$config/datasets/CONST__DATASET__event.json';
+	import { CONST__DATASET__events } from '$config/datasets/CONST__DATASET__events.json';
 	import { CONST__DATASET__lademarche } from '$config/datasets/CONST__DATASET__lademarche.json';
-	import { CONST__DATASET__post } from '$config/datasets/CONST__DATASET__post.json';
+	import { CONST__DATASET__blog } from '$config/datasets/CONST__DATASET__blog.json';
 	import {
 		CONST__DB_COLLECTION__acceuil,
 		CONST__DB_COLLECTION__blog,
@@ -31,15 +31,16 @@
 		} else if ($page.url.pathname === '/cms/la-demarche') {
 			$STORE__DB.collection = CONST__DB_COLLECTION__lademarche;
 			$STORE__DB.datasetReset = CONST__DATASET__lademarche;
-		} else if ($page.url.pathname === '/cms/creations-realisations') {
+		} else if ($page.url.pathname === '/cms/blog') {
 			$STORE__DB.collection = CONST__DB_COLLECTION__blog;
-			$STORE__DB.datasetReset = CONST__DATASET__post;
+			$STORE__DB.datasetReset = CONST__DATASET__blog;
 			$STORE__DB.formAddInputs = CONST__FORM__addPost;
-		} else if ($page.url.pathname === '/cms/prochains-rendez-vous') {
+		} else if ($page.url.pathname === '/cms/events') {
 			$STORE__DB.collection = CONST__DB_COLLECTION__event;
-			$STORE__DB.datasetReset = CONST__DATASET__event;
+			$STORE__DB.datasetReset = CONST__DATASET__events;
 			$STORE__DB.formAddInputs = CONST__FORM__addEvent;
 		}
+		console.log('COLLECTION : ', $STORE__DB.collection?.id);
 	}
 </script>
 
@@ -47,9 +48,9 @@
 	<AcceuilApp />
 {:else if $page.url.pathname === '/cms/la-demarche'}
 	<LaDemarcheApp />
-{:else if $page.url.pathname === '/cms/creations-realisations'}
+{:else if $page.url.pathname === '/cms/blog'}
 	<BlogApp />
-{:else if $page.url.pathname === '/cms/prochains-rendez-vous'}
+{:else if $page.url.pathname === '/cms/events'}
 	<EventApp />
 {:else}
 	<slot />

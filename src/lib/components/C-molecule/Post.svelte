@@ -27,14 +27,10 @@
 	};
 </script>
 
-<!-- ######################################### -->
-<!-- POST -->
-<!-- ######################################### -->
 {#if post}
 	<div class="m-2">
 		<!--               -->
 		<!-- TITLE ARTICLE -->
-		<!--               -->
 		<div
 			class="flex place-items-center py-3 border:{CONST__UI__isDebugBorder
 				? '1px solid blue'
@@ -52,7 +48,6 @@
 		</div>
 		<!--                 -->
 		<!-- CONTENT ARTICLE -->
-		<!--                 -->
 		<ParagraphLeft text={post.body.value} />
 		<div class="mdc-typography--caption">Crée le {formatDate(post.createdAt)}</div>
 		<SeparatorMedium />

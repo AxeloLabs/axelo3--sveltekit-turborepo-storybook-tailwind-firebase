@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { CONST__DATASET__slideshowA, CONST__DATASET__slideshowB, CONST__DATASET__slideshowC } from '$config/datasets/CONST__DATASET__slideshow.json';
 	import { CONST__DB_COLLECTION__blog } from '$config/db/firebase/CONST__DB__colletions';
 	import {
 		CONST__UI__baseDistanceFromHeader,
@@ -55,12 +56,12 @@
 			{/if}
 		</div>
 		<div id="slider--1" class="  ">
-			<Slider arr={['todo 1']} />
+			<!-- <Slider arr={['todo 1']} />
 			<Slider arr={['todo 3']} />
-			<Slider arr={['todo 3']} />
-			<!-- <Slider arr={CONST__DATASET__slideshowA} />
+			<Slider arr={['todo 3']} /> -->
+			<Slider arr={CONST__DATASET__slideshowA} />
 			<Slider arr={CONST__DATASET__slideshowB} />
-			<Slider arr={CONST__DATASET__slideshowC} /> -->
+			<Slider arr={CONST__DATASET__slideshowC} />
 		</div>
 	</Twocol>
 </main>

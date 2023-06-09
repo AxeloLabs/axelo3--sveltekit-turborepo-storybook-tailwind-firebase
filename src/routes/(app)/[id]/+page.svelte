@@ -14,9 +14,9 @@
 	<AcceuilApp />
 {:else if $page.url.pathname === '/la-demarche'}
 	<LaDemarcheApp />
-{:else if $page.url.pathname === '/creations-realisations'}
+{:else if $page.url.pathname === '/blog'}
 	<BlogApp />
-{:else if $page.url.pathname === '/prochains-rendez-vous'}
+{:else if $page.url.pathname === '/events'}
 	<EventApp />
 {:else}
 	<!-- login TODO -->

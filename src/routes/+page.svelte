@@ -19,9 +19,9 @@
 	<br />
 	<a href="/la-demarche">/la-demarche</a>
 	<br />
-	<a href="/creations-realisations">/creations-realisations</a>
+	<a href="/blog">/blog</a>
 	<br />
-	<a href="/prochains-rendez-vous">/prochains-rendez-vous</a>
+	<a href="/events">/events</a>
 	<br />
 	<a href="/login">/login</a>
 	<br />
@@ -32,9 +32,9 @@
 	<br />
 	<a href="/cms/la-demarche">/cms/la-demarche</a>
 	<br />
-	<a href="/cms/creations-realisations">/cms/creations-realisations</a>
+	<a href="/cms/blog">/cms/blog</a>
 	<br />
-	<a href="/cms/prochains-rendez-vous">/cms/prochains-rendez-vous</a>
+	<a href="/cms/events">/cms/events</a>
 	<br />
 	<a href="/cms/profile">/cms/profile</a>
 	<br />

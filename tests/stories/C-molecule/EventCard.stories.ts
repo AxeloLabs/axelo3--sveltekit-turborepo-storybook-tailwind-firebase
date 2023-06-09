@@ -41,7 +41,7 @@ export const Primary: Story = {
 				pos: 0,
 				tag: '-',
 				label: '-',
-				value: CONST__UI__baseDirMedia + 'content/images/prochains-rdv/1.jpg',
+				value: CONST__UI__baseDirMedia + 'content/events/img/1.jpg',
 				blobs: [],
 				format: CONST__UI__baseFormatMedia.video
 			},

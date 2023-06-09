@@ -11,7 +11,7 @@ export const CONST__DATASET__acceuil: I_DTO__formInput[] = [
 		pos: 2,
 		tag: 'file',
 		label: 'hero_2',
-		value: CONST__UI__baseDirMedia + 'content/images/acceuil/subtitle-logo--inkfree.png'
+		value: CONST__UI__baseDirMedia + 'content/acceuil/img/subtitle-logo--inkfree.png'
 	},
 	{
 		pos: 3,

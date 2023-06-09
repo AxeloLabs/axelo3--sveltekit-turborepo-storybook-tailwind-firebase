@@ -1,4 +1,4 @@
-export const CONST__DATASET__post: I_DTO__post[] = [
+export const CONST__DATASET__blog: I_DTO__post[] = [
 	{
 		createdAt: 1677360517,
 
@@ -76,7 +76,7 @@ export const CONST__DATASET__post: I_DTO__post[] = [
 	// 	tag: 'file',
 	// 	label: 'Image',
 	// 	inputValue:
-	// 		'/media/gallery/realisations-creations/charpente-reciproque/toucher-terre-realisations-creations-charpente-reciproque-gallerie_01.jpg'
+	// 		'/media/gallery/blog/charpente-reciproque/toucher-terre-blog-charpente-reciproque-gallerie_01.jpg'
 	// },
 	// {
 	//
@@ -84,7 +84,7 @@ export const CONST__DATASET__post: I_DTO__post[] = [
 	// 	tag: 'file',
 	// 	label: 'Image',
 	// 	inputValue:
-	// 		'/media/gallery/realisations-creations/cuisiniere-terre-crue/toucher-terre-realisations-creations-cuisiniere-terre-crue-rocketstove_01.JPG'
+	// 		'/media/gallery/blog/cuisiniere-terre-crue/toucher-terre-blog-cuisiniere-terre-crue-rocketstove_01.JPG'
 	// },
 	// {
 	// 	id: '4',
@@ -92,6 +92,6 @@ export const CONST__DATASET__post: I_DTO__post[] = [
 	// 	tag: 'file',
 	// 	label: 'Image',
 	// 	inputValue:
-	// 		'/media/gallery/realisations-creations/enduits-arts/toucher-terre-realisations-creations-enduits-arts-gallerie_01.jpg'
+	// 		'/media/gallery/blog/enduits-arts/toucher-terre-blog-enduits-arts-gallerie_01.jpg'
 	// }
 ];

@@ -15,7 +15,6 @@
 			true
 		);
 	});
-
 </script>
 
 {#if $STORE__CONTENT.length}

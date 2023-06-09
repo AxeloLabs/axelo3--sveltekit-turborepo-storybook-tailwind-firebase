@@ -11,14 +11,7 @@
 	let open = false;
 
 	onMount(() => {
-		axlog(
-			{ data: $STORE__CONTENT },
-			'/cms/',
-			'wc -- cms drawer: panel edit',
-			false,
-			'MOUNT',
-			true
-		);
+		axlog({ data: $STORE__CONTENT }, '/cms/', 'wc -- cms drawer: panel edit', false, 'MOUNT', true);
 	});
 </script>
 

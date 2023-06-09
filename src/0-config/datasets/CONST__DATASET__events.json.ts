@@ -1,4 +1,4 @@
-export const CONST__DATASET__event: I_DTO__event[] = [
+export const CONST__DATASET__events: I_DTO__event[] = [
 	{
 		createdAt: 1677360522,
 
@@ -6,7 +6,7 @@ export const CONST__DATASET__event: I_DTO__event[] = [
 			pos: 4,
 			tag: 'file',
 			label: 'image',
-			value: 'content/images/prochains-rdv/1.jpg'
+			value: 'content/events/img/1.jpg'
 		},
 
 		titleEvent: {
@@ -42,7 +42,7 @@ export const CONST__DATASET__event: I_DTO__event[] = [
 			pos: 4,
 			tag: 'file',
 			label: 'image',
-			value: 'content/images/prochains-rdv/2.jpg'
+			value: 'content/events/img/2.jpg'
 		},
 		titleEvent: {
 			pos: 1,
@@ -77,7 +77,7 @@ export const CONST__DATASET__event: I_DTO__event[] = [
 			pos: 4,
 			tag: 'file',
 			label: 'image',
-			value: 'content/images/prochains-rdv/3.jpg'
+			value: 'content/events/img/3.jpg'
 		},
 		titleEvent: {
 			pos: 1,
@@ -112,7 +112,7 @@ export const CONST__DATASET__event: I_DTO__event[] = [
 			pos: 4,
 			tag: 'file',
 			label: 'image',
-			value: 'content/images/prochains-rdv/4.jpg'
+			value: 'content/events/img/4.jpg'
 		},
 		titleEvent: {
 			pos: 1,
@@ -147,7 +147,7 @@ export const CONST__DATASET__event: I_DTO__event[] = [
 			pos: 4,
 			tag: 'file',
 			label: 'image',
-			value: 'content/images/prochains-rdv/5.jpg'
+			value: 'content/events/img/5.jpg'
 		},
 		titleEvent: {
 			pos: 1,
@@ -182,7 +182,7 @@ export const CONST__DATASET__event: I_DTO__event[] = [
 			pos: 4,
 			tag: 'file',
 			label: 'image',
-			value: 'content/images/prochains-rdv/6.jpg'
+			value: 'content/events/img/6.jpg'
 		},
 		titleEvent: {
 			pos: 1,
@@ -218,7 +218,7 @@ export const CONST__DATASET__event: I_DTO__event[] = [
 			pos: 4,
 			tag: 'file',
 			label: 'image',
-			value: 'content/images/prochains-rdv/7.jpg'
+			value: 'content/events/img/7.jpg'
 		},
 		titleEvent: {
 			pos: 1,
@@ -254,7 +254,7 @@ export const CONST__DATASET__event: I_DTO__event[] = [
 			pos: 4,
 			tag: 'file',
 			label: 'image',
-			value: 'content/images/prochains-rdv/8.jpg'
+			value: 'content/events/img/8.jpg'
 		},
 		titleEvent: {
 			pos: 1,
@@ -291,7 +291,7 @@ export const CONST__DATASET__event: I_DTO__event[] = [
 			pos: 4,
 			tag: 'file',
 			label: 'image',
-			value: 'content/images/prochains-rdv/8.jpg'
+			value: 'content/events/img/8.jpg'
 		},
 		titleEvent: {
 			pos: 1,
@@ -326,7 +326,7 @@ export const CONST__DATASET__event: I_DTO__event[] = [
 			pos: 4,
 			tag: 'file',
 			label: 'image',
-			value: 'content/images/prochains-rdv/10.jpg'
+			value: 'content/events/img/10.jpg'
 		},
 		titleEvent: {
 			pos: 1,

@@ -20,14 +20,14 @@ export const CONST__UI__menuApp: I_ui__menu[] = [
 		img: CONST__UI__baseDirMedia + 'frame/icon/icon-menu-la-demarche--creme.png'
 	},
 	{
-		url: '/creations-realisations',
-		title: 'Créations / Réalisations',
-		img: CONST__UI__baseDirMedia + 'frame/icon/icon-menu-realisation--creme.png'
+		url: '/blog',
+		title: 'blog',
+		img: CONST__UI__baseDirMedia + 'frame/icon/icon-menu-blog--creme.png'
 	},
 	{
-		url: '/prochains-rendez-vous',
-		title: 'Prochains rdv',
-		img: CONST__UI__baseDirMedia + 'frame/icon/icon-menu-prochains-rdv--creme.png'
+		url: '/events',
+		title: 'Events',
+		img: CONST__UI__baseDirMedia + 'frame/icon/icon-menu-events--creme.png'
 	}
 	// {
 	// 	url: '/',
