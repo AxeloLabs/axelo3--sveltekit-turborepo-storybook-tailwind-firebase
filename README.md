@@ -17,8 +17,6 @@ App shell with 2 layouts (app + cms)
 
 ## ❤️ The Stack
 
-## The Stack
-
 Every part of the **SvelteKit Enterprise Stack** is optimized to go blazingly fast to please stakeholders and uses:
 
 - ☕️ JavaScript
