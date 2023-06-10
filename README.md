@@ -15,24 +15,59 @@ Typescript, Tailwind, Sveltekit out of the box
 Firebase (free hosting and firestore quotas)
 App shell with 2 layouts (app + cms)
 
-## Install
+## ❤️ The Stack
+
+## The Stack
+
+Every part of the **SvelteKit Enterprise Stack** is optimized to go blazingly fast to please stakeholders and uses:
+
+- ☕️ JavaScript
+- 📜 TypeScript
+- ⚡️ Svelte
+- 🧑‍🎨 Figma
+
+- [Prisma](https://www.prisma.io/) for the database
+- [Lucia](https://lucia-auth.com/) for authentication
+- [Tailwind](https://tailwindcss.com/) for styling with automatic class sorting and [Skeleton UI](https://www.skeleton.dev/) for the UI components
+- [Stripe](https://stripe.com/) for payments
+- [sveltekit-superforms](https://github.com/ciscoheat/sveltekit-superforms) make working with forms easy
+- [Lucide](https://lucide.dev/) for beautiful and consistent icons
+- [TypeScript](https://www.typescriptlang.org/), [Prettier](https://prettier.io/), [ESLint](https://eslint.org/), [Playwright](https://playwright.dev/) and [Vitest](https://vitest.dev/) for testing configured
+
+## 📦️ Install
 
 ```
 degit regnou/axelo3
 pnpm i
 ```
 
-## Development
+## 📜 Development
 
 ```
 pnpm story:dev
 ```
 
-## Production
+## 📜 Production
 
 ```
 pnpm story:build
 pnpm story:preview
+```
+
+## ⛵️ Deploying
+
+You can use any SvelteKit adapter that deploys to a target that supports a [Node.js](https://nodejs.org/) runtime.
+
+If you don't have a full-stack hosting solution you can provision a serverless PostgreSQL database provider using [Railway](https://railway.app/) or [Supabase](https://supabase.com/) and host your frontend on [Vercel](https://vercel.com/) starting at no cost.
+
+```bash
+pnpm run build
+```
+
+You can also preview the build.
+
+```bash
+pnpm run preview
 ```
 
 ## Cleanup
