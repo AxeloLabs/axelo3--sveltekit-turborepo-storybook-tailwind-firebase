@@ -1,0 +1,15 @@
+{
+	"background_color": "#ffffff",
+	"theme_color": "#5cb85c",
+	"name": "Toucher Terre",
+	"short_name": "ToucherTerre",
+	"display": "minimal-ui",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "media/logo-01.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
