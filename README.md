@@ -10,10 +10,15 @@ Axelo 3
 
 This is a [webagency.app](https://www.webagency.app) demo book using [svelte.dev](https://svelte.dev)
 
-Design System with Material (SMUI)
-Typescript, Tailwind, Sveltekit out of the box
-Firebase (free hosting and firestore quotas)
-App shell with 2 layouts (app + cms)
+## Overview
+
+The Fastest Way to Build Svelte Apps
+
+- 💨 Blazing-Fast Production Sites
+- 🛠️ SSR, SPA, SSG, and In-Between
+- ⚡️ Instantly Visible Code Changes
+- 🔩 Existing Universe of Plugins
+- 🔑 Fully Typed APIs
 
 ## ❤️ The Stack
 
@@ -23,6 +28,11 @@ Every part of the **SvelteKit Enterprise Stack** is optimized to go blazingly fa
 - 📜 TypeScript
 - ⚡️ Svelte
 - 🧑‍🎨 Figma
+
+- Design System with Material (SMUI)
+- Typescript, Tailwind, Sveltekit out of the box
+- Firebase (free hosting and firestore quotas)
+- App shell with 2 layouts (app + cms)
 
 - [Prisma](https://www.prisma.io/) for the database
 - [Lucia](https://lucia-auth.com/) for authentication
@@ -75,16 +85,6 @@ To remove `node_modules` and `build` files
 ```
 pnpm clean
 ```
-
-## Overview
-
-The Fastest Way to Build Svelte Apps
-
-- 💨 Blazing-Fast Production Sites
-- 🛠️ SSR, SPA, SSG, and In-Between
-- ⚡️ Instantly Visible Code Changes
-- 🔩 Existing Universe of Plugins
-- 🔑 Fully Typed APIs
 
 ## Documentation
 
