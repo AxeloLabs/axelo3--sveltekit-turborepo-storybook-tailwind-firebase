@@ -10,6 +10,8 @@ Axelo 3
 
 This is a [webagency.app](https://www.webagency.app) demo book using [svelte.dev](https://svelte.dev)
 
+This is an official Sveltekit design system starter powered by Turborepo. Versioning and package publishing is handled by Changesets and fully automated with GitHub Actions.
+
 ## Overview
 
 The Fastest Way to Build Svelte Apps

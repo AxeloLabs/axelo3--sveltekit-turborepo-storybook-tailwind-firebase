@@ -56,7 +56,6 @@
 		"SCRIPT-------------------------------------------------------": "",
 		"script--gen-ui-admin": "node --experimental-specifier-resolution=node  src/gen/gen-ui-admin.js 'admin-la-demarche' 'LaDemarche' 'LADEMARCHE'"
 	},
-	"type": "module",
 	"dependencies": {
 		"firebase": "^9.22.1"
 	},
@@ -149,5 +148,6 @@
 	},
 	"readme": "ERROR: No README data found!",
 	"_id--old-todel": "axelo2--storybook@0.0.1",
-	"_id": "axelo3--storybook@0.0.1"
+	"_id": "axelo3--storybook@0.0.1",
+	"type": "module"
 }
