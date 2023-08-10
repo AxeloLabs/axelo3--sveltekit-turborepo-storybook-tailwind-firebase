@@ -1,0 +1,99 @@
+{
+	// -1
+	// -1 EXTENDS
+	// -1
+	// https://www.typescriptlang.org/tsconfig
+	"extends": "./.svelte-kit/tsconfig.json",
+
+	// -1
+	// -1 COMPILER
+	// -1
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"$lib": ["./src/lib"],
+			"$lib/*": ["./src/lib/*"],
+			"$config": ["./src/0-config"],
+			"$config/*": ["./src/0-config/*"],
+			"$datasets": ["./src/0-config/datasets"],
+			"$datasets/*": ["./src/0-config/datasets/*"],
+			"$stores": ["./src/stores"],
+			"$stores/*": ["./src/stores/*"],
+			"$utils": ["./src/lib/utils"],
+			"$utils/*": ["./src/lib/utils/*"],
+			"$db": ["./src/lib/db/firebase"],
+			"$db/*": ["./src/$lib/firebase/*"],
+			"$ui": ["./src/lib/components"],
+			"$ui/*": ["./src/lib/components/*"],
+			"$tests": ["./tests"],
+			"$tests/*": ["./tests/*"],
+			"$unit": ["./tests/unit"],
+			"$unit/*": ["./tests/unit/*"],
+			"$e2e": ["./tests/e2"],
+			"$e2e/*": ["./tests/e2/*"],
+			"$/*": ["./src/*"]
+		},
+		// 1
+		"allowJs": true,
+		"checkJs": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+		"types": ["vitest/globals"],
+		// 1
+		"strictBindCallApply": true,
+		// 3 Z
+		// ax -- USED WITH CV...
+		// "lib": ["es2020", "DOM"],
+		// "moduleResolution": "node",
+		// "module": "es2020",
+		// "target": "es2020",
+		//ax -- z
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
+		"useUnknownInCatchVariables": true,
+		"strictFunctionTypes": true,
+		// 3 CALMER TYPAGE 1
+		"noImplicitAny": false // EASY NOW
+		// "noImplicitAny": true // Parameter 's' implicitly has an 'any' type.
+		// 3 - API
+		// "types": ["gapi", "vitest/globals", "vitest/importMeta"],
+		// "types": ["gapi", "vitest/globals", "vitest/importMeta", "@testing-library/jest-dom"],
+		//
+		// "outDir": ".scrapper-kit"
+	}
+
+	// -1
+	// -1 INCLUDES / EXCLUDES
+	// -1
+	// 1
+	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
+	// If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
+	// from the referenced tsconfig.json - TypeScript does not merge them in
+	// 1
+	// "exclude": ["tests"]
+	// 1
+	// "include": [
+	// "tests/**/*.js",
+	// "tests/**/*.ts"
+	// "scrap/src/**/*.js",
+	// "scrap/src/**/*.ts",
+	// "dbscript/**/*.js",
+	// "dbscript/**/*.ts"
+	// ]
+
+	// -1
+	// -1 ALIAS
+	// -1
+	// "paths": {
+	// 	"$components": ["./src/lib/components"],
+	// 	"$components/*": ["./src/lib/components/*"]
+	// }
+
+	// -1
+	// -1 Z
+	// -1
+}

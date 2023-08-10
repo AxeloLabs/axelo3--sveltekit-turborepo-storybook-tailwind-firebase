@@ -1,0 +1,8 @@
+// // TODO - do it elsewhere ?
+// export const sortAsc = (mutable__arr: I_ENTITY__post[]) => {
+// 	mutable__arr.sort((a, b) => {
+// 		return a.createdAt >= b.createdAt ? -1 : 1;
+// 	});
+// 	// console.debug('react-ui >> IMU_sort says: arrSorted', mutable__arr);
+// 	return mutable__arr;
+// };
