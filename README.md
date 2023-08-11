@@ -10,11 +10,16 @@ WEB-AGENCY MONOREPO (9 juin 2023)
 
 </div>
 
-LIVE DEMO HERE: <https://y-toucherterre.web.app/acceuil>
+⚫⚫⚫ LIVE DEMO HERE: <https://y-toucherterre.web.app/acceuil>
 
 This is an App shell with 2 layouts (app + cms).  
 It is tested with storybook and chromatic.
 
+REPOSITORY: https://github.com/nzaero/axelo3-sveltekit-turborepo-storybook-tailwind-firebase
+
+CHROMATIC: https://www.chromatic.com/library?appId=647797e51cfd6aa56b07bc04
+
+STORYBOOK: https://647797e51cfd6aa56b07bc04-oolvnawwwa.chromatic.com/?path=/docs/a-design-system-themedebugcolor--docs
 
 
 ### Stack
