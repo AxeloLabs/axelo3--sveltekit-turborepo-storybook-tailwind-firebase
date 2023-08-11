@@ -74,12 +74,7 @@ pnpm deploy
 
 - Code and Contributions have **MIT License**
 
-_Copyright (c) 2021 [Navneet Sharma](http://github.com/navneetsharmaui) ([@asnavneetsharma](https://twitter.com/asnavneetsharma))_
+_Copyright (c) 2023 [Axel Regnoult](https://www.linkedin.com/in/regnou/) ([@nzaerox](https://twitter.com/nzaerox))_
 
 [MIT](https://github.com/sveltejs/kit/blob/master/LICENSE)
 
-## :100: :fire: Project LightHouse Report
-
-![sveltekit-starter-lighthouse-report](https://user-images.githubusercontent.com/11630812/115241377-5d485d80-a13e-11eb-8667-611770992c28.png)
-
-![Genesis](https://github.com/nzaero/cosmos3-unix-dev-conf/blob/main/__DOC__/1-img/genesis.webp)
