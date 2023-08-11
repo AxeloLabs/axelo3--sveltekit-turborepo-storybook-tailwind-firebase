@@ -21,6 +21,7 @@ CHROMATIC: https://www.chromatic.com/library?appId=647797e51cfd6aa56b07bc04
 STORYBOOK: https://647797e51cfd6aa56b07bc04-oolvnawwwa.chromatic.com/?path=/docs/a-design-system-themedebugcolor--docs
 
 ![AXELO 6](https://github.com/nzaero/axelo3-sveltekit-turborepo-storybook-tailwind-firebase/blob/main/DOC/b.png)
+![AXELO 6](https://github.com/nzaero/axelo3-sveltekit-turborepo-storybook-tailwind-firebase/blob/main/DOC/a.png)
 
 ### Stack
 
