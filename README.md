@@ -23,7 +23,7 @@ STORYBOOK: https://647797e51cfd6aa56b07bc04-oolvnawwwa.chromatic.com/?path=/docs
 ![AXELO 6](https://github.com/nzaero/axelo3-sveltekit-turborepo-storybook-tailwind-firebase/blob/main/DOC/b.png)
 ![AXELO 6](https://github.com/nzaero/axelo3-sveltekit-turborepo-storybook-tailwind-firebase/blob/main/DOC/a.png)
 
-### Stack
+### 0) STACK
 
 0. Typescript
 1. Sveltekit
