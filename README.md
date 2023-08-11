@@ -6,6 +6,8 @@
 
 WEB-AGENCY MONOREPO (9 juin 2023)
 
+![AXELO 6](https://github.com/nzaero/axelo3-sveltekit-turborepo-storybook-tailwind-firebase/blob/main/DOC/d.png)
+
 </div>
 
 LIVE DEMO HERE: <https://y-toucherterre.web.app/acceuil>
@@ -13,7 +15,7 @@ LIVE DEMO HERE: <https://y-toucherterre.web.app/acceuil>
 This is an App shell with 2 layouts (app + cms).  
 It is tested with storybook and chromatic.
 
-![AXELO 6](https://github.com/nzaero/cosmos3-unix-dev-conf/blob/main/__DOC__/1-img/genesis.webp)
+
 
 ### Stack
 
