@@ -34,9 +34,8 @@ STORYBOOK: https://647797e51cfd6aa56b07bc04-oolvnawwwa.chromatic.com/?path=/docs
 ### 1) FEATURES
 
 1. Design System with Material (SMUI)
-2. Typescript, Tailwind, Sveltekit out of the box
-3. Firebase (free hosting and firestore quotas)
-4. App shell with 2 layouts (app + cms)
+2. Firebase (free hosting and firestore quotas)
+3. App shell with 2 layouts (app + cms)
 
 ## 📜 Setup
 `pnpm install`  
@@ -45,7 +44,7 @@ STORYBOOK: https://647797e51cfd6aa56b07bc04-oolvnawwwa.chromatic.com/?path=/docs
 `pnpm deploy`
 
 
-## 📜 Storybook-Development
+## 📜 [Storybook] Development
 
 ```
 
@@ -53,7 +52,7 @@ pnpm story
 
 ```
 
-## 📜 Production
+## 📜 [Storybook] Production
 
 ```
 
@@ -62,13 +61,6 @@ pnpm story:preview
 
 ```
 
-## ⛵️ Deploying
-
-```
-
-pnpm deploy
-
-```
 
 ## 💫 License
 
